@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "421292835026",
+    "project_id": "publicnotes",
+    "storage_bucket": "publicnotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421292835026:android:11143bf71835d46b67ed0b",
+        "android_client_info": {
+          "package_name": "com.example.firebaserw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWGpoc5syiXURYCjla3Ul0YkpG12CTnyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
