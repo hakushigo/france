@@ -15,11 +15,7 @@ class _HomepageState extends State<Homepage> {
   final _nameController = TextEditingController();
   final _cityController = TextEditingController();
 
-  List<Widget> francois = [
-    Center(
-      child: Text("This view is empty"),
-    )
-  ];
+  List<Widget> francois = [];
 
   @override
   void initState() {
@@ -40,12 +36,12 @@ class _HomepageState extends State<Homepage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                Text("Hello comrade! ",
+                const Text("Hello comerades! ",
                     style:
                         TextStyle(fontSize: 32, fontWeight: FontWeight.w100)),
-                SizedBox(height: 10),
-                Text(
-                    "C'est une application pour lister les personnes qui sont françaises ! si vous pensez que vous êtes français, ajoutez vous à la liste !."),
+                const SizedBox(height: 10),
+                const Text(
+                    "It's an application for listing people who are French! If you think you're French, add yourself to the list!"),
                 SizedBox(height: 20),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -54,13 +50,13 @@ class _HomepageState extends State<Homepage> {
                         textAlign: TextAlign.left,
                         controller: _nameController,
                         decoration:
-                            InputDecoration(hintText: "votre nom complet")),
+                            const InputDecoration(hintText: "Your Full Name")),
                     TextField(
                         textAlign: TextAlign.left,
                         controller: _cityController,
-                        decoration: InputDecoration(
-                            hintText: "Nom de la ville d'où vous venez")),
-                    SizedBox(height: 10),
+                        decoration: const InputDecoration(
+                            hintText: "Your Home Town Name")),
+                    const SizedBox(height: 10),
                     Row(
                       children: [
                         ElevatedButton(
@@ -70,7 +66,7 @@ class _HomepageState extends State<Homepage> {
                               setState(() {});
                               setState(() {});
                             },
-                            child: Text("Registre")),
+                            child: Text("Register")),
                         SizedBox(width: 20),
                         ElevatedButton(
                             onPressed: () {
@@ -78,17 +74,17 @@ class _HomepageState extends State<Homepage> {
                               setState(() {});
                               setState(() {});
                             },
-                            child: Text("Réactualiser"))
+                            child: Text("Refresh"))
                       ],
                     )
                   ],
                 ),
               ]),
-              SizedBox(height: 10),
-              Divider(),
-              SizedBox(height: 20),
-              Text(
-                "liste des camarades",
+              const SizedBox(height: 10),
+              const Divider(),
+              const SizedBox(height: 20),
+              const Text(
+                "List of fellow frenchman",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w300),
                 textAlign: TextAlign.center,
               ),
@@ -100,7 +96,7 @@ class _HomepageState extends State<Homepage> {
         ),
       )),
       appBar: AppBar(
-        title: Text('l\'application tricolore 🇫🇷'),
+        title: Text('The tricolor 🇫🇷 App'),
       ),
     );
   }

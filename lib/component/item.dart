@@ -24,7 +24,7 @@ class ItemCard extends StatelessWidget {
                       children: [
                         CardTitle(this.name),
                         SizedBox(height: 15),
-                        Text("ville d'origine : ${this.city}")
+                        Text("Town of origin : ${this.city}")
                       ],
                     ),
                   ],
@@ -36,7 +36,7 @@ class ItemCard extends StatelessWidget {
   void Destroy() {}
 
   @override
-  bool operator == (Object other) {
+  bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
     return other is ItemCard &&
